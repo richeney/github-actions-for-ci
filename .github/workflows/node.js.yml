@@ -14,12 +14,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-2016]
-        node-version: [12.x, 14.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v2
     - name: npm install and build webpack
